@@ -42,159 +42,100 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![WhatsApp Image 2024-02-12 at 11 29 19 AM](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/c94c4a76-49f4-46f7-97a8-de321ce85120)
 
 
 
 cat < file2
 ## OUTPUT
+![WhatsApp Image 2024-02-12 at 11 29 19 AM](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/c72ff23e-df20-4c08-8a16-4840261eac1f)
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/c7f60bc8-07bb-43c7-88f6-f77c518174a6)
+
 comm file1 file2
  ## OUTPUT
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/e1c1fa6a-7eb5-4573-a2f7-d332c63707c4)
 
  
 diff file1 file2
 ## OUTPUT
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/14a11e10-748c-4837-8f8c-98a7bb7c54e8)
 
 
 #Filters
 
 ### Create the following files file11, file22 as follows:
 
-cat > file11
-```
-Hello world
-This is my world
-^d
-```
-cat > file22
-```
-1001 | Ram | 10000 | HR
-1002 | tom |  5000 | Admin
-1003 | Joe |  7000 | Developer
-^d
-```
-
-
 cut -c1-3 file11
 ## OUTPUT
-
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/40d880c3-4eeb-421a-a564-29e45404475f)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/436a7501-c522-4b02-ae39-ba1a391c5031)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
-
 cat < newfile 
-```
-Hello world
-hello world
-^d
-````
-cat > newfile 
-Hello world
-hello world
- 
-grep Hello newfile 
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/bb19a3e7-3f12-483f-a0fc-377586c7019b)
+
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/dc16d4c9-3743-44b5-a7cd-f3d9282df0df)
 
 grep hello newfile 
 ## OUTPUT
-
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/92152c61-8f4a-4e64-ab25-e1da4a78772e)
 
 grep -v hello newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/553fa073-7703-4184-a309-2861a3940b15)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/9f98cf1b-0b69-462d-be37-661b91058c6d)
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
-
-
 grep -R ubuntu /etc
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/b86a6b5a-83f8-403b-adc9-b8ce7073234e)
 
 grep -w -n world newfile   
 ## OUTPUT
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/eb24b560-ea0d-4000-939b-f5f2fd01719d)
 
-
-cat < newfile 
-```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
-```
-
-cat > newfile
-```
-Hello world
-hello world
-Linux is world number 1
-Unix is predecessor
-Linux is best in this World
-^d
- ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/91e9ca2e-80d8-40af-879f-7d162fd1f81a)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/2aef2ecf-efd6-414a-806b-565f5a352e42)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/d4683644-1bb0-4e3c-aba6-e8ad1e7b6235)
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/e84ff546-0bb2-4673-89d2-e063ab52b79c)
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/d0f30de0-6f36-44d6-b179-9038cf64011a)
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/61277461-c803-4651-97a2-44b2f2249941)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
-
+![image](https://github.com/deepika3095/OS-Linux-commands-Shell-script/assets/151625159/8407e750-360d-4618-bcf1-a15397ac5679)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
